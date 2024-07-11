@@ -39,26 +39,32 @@ This page should contain overview of the player
 
 ## Setup
 
+Use project node version
+
+```bash
+nvm use
+```
+
 Install dependencies (using NPM)
 
 ```bash
-$ npm run install
+npm run install
 ```
 
 Download GraphQL Schema
 
 ```bash
-$ npm run download-schema
+npm run download-schema
 ```
 
 Generate GraphQL Types (generated types will be in `src/generated/graphql.ts`
 
 ```bash
-$ npm run codegen
+npm run codegen
 ```
 
 Start dev mode
 
 ```bash
-$ npm run dev
+npm run dev
 ```
