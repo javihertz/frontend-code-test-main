@@ -48,7 +48,7 @@ nvm use
 Install dependencies (using NPM)
 
 ```bash
-npm run install
+npm install
 ```
 
 Download GraphQL Schema
