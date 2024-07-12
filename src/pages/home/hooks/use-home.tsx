@@ -1,5 +1,7 @@
 import { gql, useQuery } from 'urql';
+import { HomeQuery } from '../../../generated/graphql';
 
+type PeopleDTO = Pick<HomeQuery, 'allPeople'>;
 const query = gql`
   query Home {
     allPeople {
@@ -14,11 +16,11 @@ const query = gql`
 `;
 
 export function useHome() {
-  const [{ data, fetching, error }] = useQuery({ query });
+  const [{ data, fetching, error }] = useQuery<PeopleDTO>({ query });
 
   return {
-    data: data,
-    hasError: error,
+    data: data?.allPeople,
+    hasError: !!error,
     isLoading: fetching,
   };
 }
