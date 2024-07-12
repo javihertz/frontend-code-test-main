@@ -1,5 +1,6 @@
 import { ErrorBasic } from '../../components/error-basic/error-basic';
 import { SkeletonCard } from '../../components/skeleton-card/skeleton-card';
+import { PeopleList } from './components/people-list/people-list';
 import './home.css';
 import { useHome } from './hooks/use-home';
 
@@ -34,13 +35,7 @@ const Home = () => {
   if (data) {
     return (
       <HomeContainer>
-        <ul className='people'>
-          {data?.edges?.map((person) => (
-            <li className='person' key={person?.node?.id}>
-              <p className='person-name'>{person?.node?.name}</p>
-            </li>
-          ))}
-        </ul>
+        <PeopleList people={data} />
       </HomeContainer>
     );
   }
