@@ -1,8 +1,24 @@
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+
+html {
+  background: #19131a;
+  color: white;
+}
 
  * {
-    box-sizing: border-box;
-    position: relative;
-    min-width: 0;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
  }
  
  body {
@@ -26,3 +42,9 @@
    margin: 0 auto;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
