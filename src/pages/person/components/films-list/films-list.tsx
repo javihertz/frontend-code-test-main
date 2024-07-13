@@ -25,7 +25,7 @@ export function FilmsList({ filmsList }: FilmListProps) {
         <div className='film'>
           <h2>{`Name: ${filmsList[selectedFilm]?.title}`}</h2>
           <h3>{`Release Date: ${filmsList[selectedFilm]?.releaseDate}`}</h3>
-          <h3>{`Planets without water: ${filmsList[selectedFilm]?.planetWithoutWater}`}</h3>
+          <h3>{`Planets without water: ${filmsList[selectedFilm]?.planetsWithoutWater}`}</h3>
         </div>
       </Card>
       <footer>

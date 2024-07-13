@@ -27,7 +27,7 @@ export interface PersonDTO {
 export interface PersonMap {
   averageHeight: string;
   filmsList: {
-    planetWithoutWater: number;
+    planetsWithoutWater: number;
     releaseDate: string;
     title: string;
   }[];

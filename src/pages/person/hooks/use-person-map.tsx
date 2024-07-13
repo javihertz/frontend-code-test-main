@@ -31,7 +31,7 @@ export function usePersonMap(data: PersonDTO | undefined) {
     const filmsList = data.person.filmConnection.films.map((film) => ({
       title: film.title,
       releaseDate: film.releaseDate,
-      planetWithoutWater: film.planetConnection.planets.filter(
+      planetsWithoutWater: film.planetConnection.planets.filter(
         (planet) => planet.surfaceWater === 0
       ).length,
     }));
