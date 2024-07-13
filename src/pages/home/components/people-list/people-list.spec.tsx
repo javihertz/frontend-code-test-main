@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { MemoryRouter } from 'react-router-dom';
+import { customRender } from '../../../../utils/custom-render';
 import { PeopleList } from './people-list';
 
 const mockUseNavigate = jest.fn();
@@ -9,10 +9,6 @@ jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
   useNavigate: () => mockUseNavigate,
 }));
-
-const customRender = (children: React.ReactElement) => {
-  return render(<MemoryRouter>{children}</MemoryRouter>);
-};
 
 const mockPeopleList = jest.fn().mockReturnValue({
   edges: [
