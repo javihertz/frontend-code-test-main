@@ -1,64 +1,6 @@
 .home {
     h1 {
-        margin: 100px;
+        margin: 40px;
+        text-align: center;
     }
-
-    align-items: center;
-    display: flex;
-    height: 100dvh;
-    margin: auto;
-    
-    .people {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        margin-bottom: 50px;
-        overflow-y: auto;
-        place-items: center;
-        width: 100%;
-
-        .person {
-            background-color: #23262d;
-            background-image: none;
-            background-position: 100%;
-            background-size: 400%;
-            border-radius: 8px;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-            display: flex;
-            padding: 1px;
-            transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-            align-items: center;
-            cursor: pointer;
-            display: flex;
-            height: 200px;
-            justify-content: center;
-            list-style: none;
-            width: 250px;
-        }
-
-        .person:is(:hover, :focus-within) {
-            background-position: 0;
-            background-image: var(--accent-gradient);
-        }
-
-        .person:is(:hover, :focus-within) h2 {
-            color: rgb(var(--accent-light));
-        }
-
-        .person-name {
-            align-items: center;
-            background-color: #23262d;
-            border-radius: 8px;
-            color: white;
-            display: flex;
-            font-weight: 700;
-            height: 100%;
-            justify-content: center;
-            line-height: 1.4;
-            opacity: 0.8;
-            text-decoration: none;
-            width: 100%;
-    	}
-    }
-    
 }

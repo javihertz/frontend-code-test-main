@@ -1,5 +1,5 @@
 import { ErrorBasic } from '../../components/error-basic/error-basic';
-import { SkeletonCard } from '../../components/skeleton-card/skeleton-card';
+import { Loader } from '../../components/loader/loader';
 import { PeopleList } from './components/people-list/people-list';
 import './home.css';
 import { useHome } from './hooks/use-home';
@@ -19,7 +19,7 @@ const Home = () => {
   if (isLoading) {
     return (
       <HomeContainer>
-        <SkeletonCard />
+        <Loader />
       </HomeContainer>
     );
   }
