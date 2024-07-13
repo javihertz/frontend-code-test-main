@@ -1,0 +1,26 @@
+.person {
+    h1 {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    section:not(:last-child) {
+        border-bottom: 1px solid var(--main-purple);
+    }
+
+    .person-info {
+        overflow-y: auto;
+        padding-bottom: 50px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 800px;
+        place-items: center;
+    }
+    
+}
