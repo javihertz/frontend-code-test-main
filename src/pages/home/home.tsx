@@ -32,7 +32,7 @@ const Home = () => {
     );
   }
 
-  if (data) {
+  if (data?.edges?.length) {
     return (
       <HomeContainer>
         <PeopleList people={data} />
