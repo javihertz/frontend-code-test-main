@@ -1,9 +1,4 @@
 .person {
-    h1 {
-        margin: 40px 0;
-        text-align: center;
-    }
-
     section:not(:last-child) {
         border-bottom: 1px solid var(--main-purple);
     }
@@ -21,6 +16,10 @@
         margin: 0 auto;
         max-width: 800px;
         place-items: center;
-    }
-    
+    }    
+}
+
+.person h1 {
+    margin: 40px 0;
+    text-align: center;
 }

@@ -8,8 +8,9 @@
     padding-top: 15px;
     place-items: center;
     width: 100%;
+}
 
-    .person-name {
+.people  .person-name {
         align-items: center;
         background-color: var(--main-grey);
         border-radius: 8px;
@@ -22,5 +23,4 @@
         opacity: 0.8;
         text-decoration: none;
         width: 100%;
-    }
 }

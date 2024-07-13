@@ -1,23 +1,23 @@
 .card {
     margin-bottom: 20px;
+}
 
-    .film {
-        align-items: center;
-        background-color: var(--main-grey);
-        border-radius: 8px;
-        color: white;
-        cursor: default;
-        display: flex;
-        flex-direction: column;
-        font-weight: 700;
-        height: 400px;
-        justify-content: center;
-        line-height: 1.4;
-        opacity: 0.8;
-        text-align: center;
-        text-decoration: none;
-        width: 100%;
-    }
+.card .film {
+    align-items: center;
+    background-color: var(--main-grey);
+    border-radius: 8px;
+    color: white;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    height: 400px;
+    justify-content: center;
+    line-height: 1.4;
+    opacity: 0.8;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
 }
 
 
