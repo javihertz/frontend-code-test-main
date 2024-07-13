@@ -1,22 +1,13 @@
-import { gql, useQuery } from 'urql';
+import { useQuery } from 'urql';
 import { HomeQuery } from '../../../generated/graphql';
+import { GET_HOME_QUERY } from '../../../queries/home-queries';
 
 type PeopleDTO = Pick<HomeQuery, 'allPeople'>;
-const query = gql`
-  query Home {
-    allPeople {
-      edges {
-        node {
-          id
-          name
-        }
-      }
-    }
-  }
-`;
 
 export function useHome() {
-  const [{ data, fetching, error }] = useQuery<PeopleDTO>({ query });
+  const [{ data, fetching, error }] = useQuery<PeopleDTO>({
+    query: GET_HOME_QUERY,
+  });
 
   return {
     data: data?.allPeople,
