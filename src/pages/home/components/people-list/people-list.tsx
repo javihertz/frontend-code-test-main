@@ -15,7 +15,7 @@ export function PeopleList({ people }: PeopleListProps) {
   };
 
   return (
-    <div className='people'>
+    <div className='people' data-testid='people-list'>
       {people?.edges?.map((person, index) => (
         <Card
           key={person?.node?.id ?? index}
