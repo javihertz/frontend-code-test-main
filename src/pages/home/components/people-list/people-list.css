@@ -1,0 +1,26 @@
+
+.people {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    overflow-y: auto;
+    padding-bottom: 50px;
+    padding-top: 15px;
+    place-items: center;
+    width: 100%;
+
+    .person-name {
+        align-items: center;
+        background-color: var(--main-grey);
+        border-radius: 8px;
+        color: white;
+        display: flex;
+        font-weight: 700;
+        height: 100%;
+        justify-content: center;
+        line-height: 1.4;
+        opacity: 0.8;
+        text-decoration: none;
+        width: 100%;
+    }
+}
