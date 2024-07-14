@@ -71,7 +71,6 @@ This repository contains a technical assignment with the goal of creating two pa
 
 - The project includes comprehensive tests.
 - Configured with scripts for testing and code coverage.
-- Check the [repository](https://github.com/javihertz/frontend-code-test-main) for further details.
 
 ## Resources
 
