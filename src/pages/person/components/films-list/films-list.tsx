@@ -19,7 +19,7 @@ export function FilmsList({ filmsList }: FilmListProps) {
   };
 
   return (
-    <section>
+    <section data-testid='films-list'>
       <h2>Films</h2>
       <Card>
         <div className='film'>

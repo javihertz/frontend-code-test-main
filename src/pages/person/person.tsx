@@ -47,7 +47,7 @@ const Person = () => {
   if (data) {
     return (
       <PersonContainer personName={data.personName}>
-        <div className='person-info'>
+        <div data-testid='person-info' className='person-info'>
           <PersonInfo
             averageHeight={data.averageHeight}
             producersList={data.producersList}
@@ -60,7 +60,7 @@ const Person = () => {
 
   return (
     <PersonContainer>
-      <h1>There's no information to be shown in the list</h1>
+      <h1>There's no information to be shown about this person</h1>
     </PersonContainer>
   );
 };
