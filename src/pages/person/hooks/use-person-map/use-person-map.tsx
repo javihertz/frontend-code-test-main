@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { PersonDTO, PersonMap } from '../interfaces/person.interface';
+import { PersonDTO, PersonMap } from '../../interfaces/person.interface';
 
 type ProducersList = {
   [k: string]: {

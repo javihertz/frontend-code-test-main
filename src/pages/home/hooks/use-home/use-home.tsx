@@ -1,6 +1,6 @@
 import { useQuery } from 'urql';
-import { HomeQuery } from '../../../generated/graphql';
-import { GET_HOME_QUERY } from '../../../queries/home-queries';
+import { HomeQuery } from '../../../../generated/graphql';
+import { GET_HOME_QUERY } from '../../../../queries/home-queries';
 
 type PeopleDTO = Pick<HomeQuery, 'allPeople'>;
 

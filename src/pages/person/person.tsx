@@ -3,7 +3,7 @@ import { ErrorBasic } from '../../components/error-basic/error-basic';
 import { Loader } from '../../components/loader/loader';
 import { FilmsList } from './components/films-list/films-list';
 import { PersonInfo } from './components/person-info/person-info';
-import { usePerson } from './hooks/use-person';
+import { usePerson } from './hooks/use-person/use-person';
 import './person.css';
 
 interface PersonContainerProps {

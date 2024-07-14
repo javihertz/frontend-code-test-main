@@ -2,7 +2,7 @@ import { ErrorBasic } from '../../components/error-basic/error-basic';
 import { Loader } from '../../components/loader/loader';
 import { PeopleList } from './components/people-list/people-list';
 import './home.css';
-import { useHome } from './hooks/use-home';
+import { useHome } from './hooks/use-home/use-home';
 
 const HomeContainer = ({ children }: { children: React.ReactNode }) => {
   return (

@@ -22,7 +22,7 @@ const mockData = jest.fn().mockReturnValue({
 const mockIsLoading = jest.fn().mockReturnValue(false);
 const mockHasError = jest.fn().mockReturnValue(false);
 
-jest.mock('./hooks/use-home.tsx', () => ({
+jest.mock('./hooks/use-home/use-home.tsx', () => ({
   useHome: () => ({
     data: mockData(),
     hasError: mockHasError(),
