@@ -1,70 +1,78 @@
-# Code Test
+# StarWars API Test
+
+- **Live Demo:** [frontend-code-test-main.vercel.app](https://frontend-code-test-main.vercel.app)
 
 ## Assignment
 
-The application is setup with React Router containing two routes. The goal of
-the assignement is to create these two pages based on the mockups mentioned in
-each page section.
+This repository contains a technical assignment with the goal of creating two pages using React Router based on provided mockups. The data is fetched from the Star Wars API using the pre-configured urql client.
 
-The data is fetched from
-[Star Wars API](https://studio.apollographql.com/public/star-wars-swapi/home?variant=current)
-with the already setup [urql](https://formidable.com/open-source/urql/) client.
+**Pages:**
 
-The styling method is free of choice, it could be with css, scss, css-in-js or
-other preferences.
-
-- `/` - the home page
-- `/person/:personId` - the person page
-
-### Home page
-
-This page should list all the people from the Star Wars API. Each person should
-be linked to its own page.
-
-![home](./docs/home.png)
-
-### Person page
-
-This page should contain overview of the player
-
-- List of producers the person has worked with and how many times.
-- Birth year
-- Person species average height.
-- Paginated list of person films containing:
-  - Title.
-  - Release Date.
-  - Number of planets without water in the film.
-
-![person](./docs/person.png)
+- **Home page (`/`)**: Lists all Star Wars characters, linking each to its own detail page.
+- **Person page (`/person/:personId`)**: Displays details about the selected character, including:
+  - List of producers they have worked with and the count.
+  - Birth year.
+  - Species' average height.
+  - Paginated list of films with title, release date, and count of planets without water.
 
 ## Setup
 
-Use project node version
+1. **Use project node version:**
 
-```bash
-nvm use
-```
+    ```bash
+    nvm use
+    ```
 
-Install dependencies (using NPM)
+2. **Install dependencies:**
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
-Download GraphQL Schema
+3. **Download GraphQL Schema:**
 
-```bash
-npm run download-schema
-```
+    ```bash
+    npm run download-schema
+    ```
 
-Generate GraphQL Types (generated types will be in `src/generated/graphql.ts`
+4. **Generate GraphQL Types (output in `src/generated/graphql.ts`):**
 
-```bash
-npm run codegen
-```
+    ```bash
+    npm run codegen
+    ```
 
-Start dev mode
+5. **Start development mode:**
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
+
+## Testing
+
+- **Run tests:**
+
+    ```bash
+    npm test
+    ```
+
+- **Watch tests:**
+
+    ```bash
+    npm run test:watch
+    ```
+
+- **Generate coverage:**
+
+    ```bash
+    npm run test:coverage
+    ```
+
+## Additional Notes
+
+- The project includes comprehensive tests.
+- Configured with scripts for testing and code coverage.
+- Check the [repository](https://github.com/javihertz/frontend-code-test-main) for further details.
+
+## Resources
+
+- **Technologies:** TypeScript, CSS, JavaScript, HTML
