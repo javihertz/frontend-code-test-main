@@ -10,7 +10,6 @@ export function usePerson(personId: string) {
   });
 
   const personMap = usePersonMap(data);
-  console.log('🧪 debug 🧪 personMap:', personMap);
 
   return {
     data: personMap,
